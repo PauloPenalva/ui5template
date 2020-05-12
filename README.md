@@ -1,2 +1,2 @@
 # ui5template
-OpenUI5 Template
+OpenUI5 App Template
