@@ -27,21 +27,21 @@
             <t:columns>
               <t:Column sortProperty="UserName" filterProperty="UserName">
                 <Label text="labelUserName" />
-                <t:ui5Template>
+                <t:template>
                   <Text text="{UserName}" />
-                </t:ui5Template>
+                </t:template>
               </t:Column>
               <t:Column sortProperty="LastName">
                 <Label text="labelLastName" />
-                <t:ui5Template>
+                <t:template>
                   <Text text="{LastName}" />
-                </t:ui5Template>
+                </t:template>
               </t:Column>
               <t:Column sortProperty="FirstName">
                 <Label text="labelFirstName" />
-                <t:ui5Template>
+                <t:template>
                   <Text text="{FirstName}" />
-                </t:ui5Template>
+                </t:template>
               </t:Column>
             </t:columns>
           </t:Table>
