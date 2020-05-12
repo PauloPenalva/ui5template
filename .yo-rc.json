@@ -1,6 +1,6 @@
 {
   "generator-easy-ui5": {
-    "projectname": "Template",
+    "projectname": "ui5Template",
     "namespace": "br.com.idxtec",
     "platform": "Static webserver",
     "viewtype": "XML",

@@ -1,5 +1,5 @@
 sap.ui.define([
-  "br/com/idxtec/Template/controller/BaseController",
+  "br/com/idxtec/ui5Template/controller/BaseController",
   "sap/m/MessageBox"
 ], function (
   BaseController,
@@ -7,7 +7,7 @@ sap.ui.define([
 ) {
   "use strict";
 
-  return BaseController.extend("br.com.idxtec.Template.controller.Edit", {
+  return BaseController.extend("br.com.idxtec.ui5Template.controller.Edit", {
     onInit: function () {
       this.getRouter().getRoute("Edit").attachMatched(this._routerMatch, this);
       this.getView().setBusyIndicatorDelay(0);

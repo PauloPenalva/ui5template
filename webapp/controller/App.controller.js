@@ -1,5 +1,5 @@
 sap.ui.define([
-  "br/com/idxtec/Template/controller/BaseController",
+  "br/com/idxtec/ui5Template/controller/BaseController",
   "sap/ui/model/Filter",
   "sap/ui/model/FilterOperator",
   "sap/m/MessageBox"
@@ -9,7 +9,7 @@ sap.ui.define([
 	MessageBox) {
   "use strict";
 
-  return BaseController.extend("br.com.idxtec.Template.controller.App", {
+  return BaseController.extend("br.com.idxtec.ui5Template.controller.App", {
     onInit: function () {
       this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
       this.getView().setBusyIndicatorDelay(0);

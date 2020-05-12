@@ -2,11 +2,11 @@ sap.ui.define([
   "sap/ui/core/mvc/Controller",
   "sap/ui/core/routing/History",
   "sap/ui/core/UIComponent",
-  "br/com/idxtec/Template/model/formatter"
+  "br/com/idxtec/ui5Template/model/formatter"
 ], function(Controller, History, UIComponent, formatter) {
   "use strict";
 
-  return Controller.extend("br.com.idxtec.Template.controller.BaseController", {
+  return Controller.extend("br.com.idxtec.ui5Template.controller.BaseController", {
 
     formatter: formatter,
 

@@ -4,7 +4,7 @@ sap.ui.require([
 ], function (Opa5, AggregationLengthEquals) {
   "use strict";
 
-  var sViewName = "br.com.idxtec.Template.view.App";
+  var sViewName = "br.com.idxtec.ui5Template.view.App";
   var sAppId = "idAppControl";
 
   Opa5.createPageObjects({

@@ -1,4 +1,4 @@
- <mvc:View controllerName="br.com.idxtec.Template.controller.App"
+ <mvc:View controllerName="br.com.idxtec.ui5Template.controller.App"
   displayBlock="true"
   xmlns="sap.m"
   xmlns:t="sap.ui.table"
@@ -27,21 +27,21 @@
             <t:columns>
               <t:Column sortProperty="UserName" filterProperty="UserName">
                 <Label text="labelUserName" />
-                <t:template>
+                <t:ui5Template>
                   <Text text="{UserName}" />
-                </t:template>
+                </t:ui5Template>
               </t:Column>
               <t:Column sortProperty="LastName">
                 <Label text="labelLastName" />
-                <t:template>
+                <t:ui5Template>
                   <Text text="{LastName}" />
-                </t:template>
+                </t:ui5Template>
               </t:Column>
               <t:Column sortProperty="FirstName">
                 <Label text="labelFirstName" />
-                <t:template>
+                <t:ui5Template>
                   <Text text="{FirstName}" />
-                </t:template>
+                </t:ui5Template>
               </t:Column>
             </t:columns>
           </t:Table>
