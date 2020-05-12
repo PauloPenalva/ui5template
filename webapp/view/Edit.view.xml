@@ -1,0 +1,18 @@
+<mvc:View controllerName="br.com.idxtec.Template.controller.Edit"
+  displayBlock="true"
+	xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+  <Page showHeader="false" class="sapUiResponsiveContentPadding">
+    <content>
+      <core:Fragment fragmentName="br.com.idxtec.Template.fragments.Form" type="XML" />
+    </content>
+    <footer>
+      <Toolbar>
+        <ToolbarSpacer />
+        <Button text="btnSave" icon="sap-icon://save" type="Emphasized" press="save"/>
+        <Button text="btnCancel" press="cancel"/>
+      </Toolbar>
+    </footer>
+  </Page>
+</mvc:View>

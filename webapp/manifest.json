@@ -1,0 +1,134 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+    "id": "br.com.idxtec.Template",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "dataSources": {
+			"default":{
+				"uri": "/siagro/odata/service.svc/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "4.0"
+				}
+			}
+		}
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "fullWidth": true
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "br.com.idxtec.Template.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "handleValidation": true,
+    "dependencies": {
+      "minUI5Version": "1.60.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "br.com.idxtec.Template.i18n.i18n"
+        }
+      },
+      "view":{
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "":{
+        "dataSource": "default",
+				"preload": true,
+				"settings": {
+					"earlyRequests": true,
+					"operationMode": "Server",
+					"synchronizationMode": "None",
+					"updateGroupId" : "updGroup",
+					"autoExpandSelect": true,
+					"groupId": "$auto"
+				}
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "br.com.idxtec.Template.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "async": true
+      },
+      "routes": [
+        {
+          "name": "appHome",
+          "pattern": "",
+          "target": "AppHome"
+        },
+        {
+          "name": "Add",
+          "pattern": "add",
+          "target": "Add"
+        },
+        {
+          "name": "Edit",
+          "pattern": "edit('{id}')",
+          "target": "Edit"
+        }
+      ],
+      "targets": {
+        "AppHome": {
+          "viewType": "XML",
+          "viewLevel": 1,
+          "viewName": "App"
+        },
+        "Add": {
+          "viewType": "XML",
+          "viewLevel": 1,
+          "viewName": "Add"
+        },
+        "Edit": {
+          "viewType": "XML",
+          "viewLevel": 1,
+          "viewName": "Edit"
+        }
+      }
+    }
+  }
+}

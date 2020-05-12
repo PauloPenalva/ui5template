@@ -1,0 +1,12 @@
+{
+  "generator-easy-ui5": {
+    "projectname": "Template",
+    "namespace": "br.com.idxtec",
+    "platform": "Static webserver",
+    "viewtype": "XML",
+    "viewname": "App",
+    "ui5libs": "Content delivery network (OpenUI5)",
+    "newdir": true,
+    "namespaceURI": "br/com/idxtec"
+  }
+}

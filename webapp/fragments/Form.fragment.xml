@@ -1,0 +1,18 @@
+<core:FragmentDefinition
+   	xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+   	xmlns:core="sap.ui.core">
+    <f:SimpleForm id="form" layout="ResponsiveGridLayout" singleContainerFullSize="true"
+      title="People">
+      <f:content>
+          <core:Title text="People Data"/>
+          <Label text="UserName" />
+          <Input value="{UserName}" required="true" editable="{view>/editable}"/>
+          <Label text="LastName" />
+          <Input value="{LastName}" required="true"/>
+          <Label text="FirstName" />
+          <Input value="{FirstName}" required="true"/>
+          <core:Title />
+      </f:content>
+    </f:SimpleForm>
+</core:FragmentDefinition>

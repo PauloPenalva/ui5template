@@ -1,0 +1,61 @@
+ <mvc:View controllerName="br.com.idxtec.Template.controller.App"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:t="sap.ui.table"
+  xmlns:core="sap.ui.core"
+  xmlns:mvc="sap.ui.core.mvc">
+  <App id="app" >
+    <pages>
+      <Page title="{i18n>title}" showHeader="false">
+        <content>
+          <t:Table id="table"
+            class="sapUiSizeCondensed"
+            alternateRowColors="true"
+            enableBusyIndicator="true"
+            busyIndicatorDelay="0"
+            selectionBehavior="Row"
+            selectionMode="Single"
+            visibleRowCountMode="Auto"
+            rows="{/People}">
+            <t:extension>
+              <OverflowToolbar>
+                <Title level="Auto" text="titlePeoples" />
+                <ToolbarSpacer />
+                <SearchField width="30%" placeholder="searchName" search="onSearch"/>
+              </OverflowToolbar>
+            </t:extension>
+            <t:columns>
+              <t:Column sortProperty="UserName" filterProperty="UserName">
+                <Label text="labelUserName" />
+                <t:template>
+                  <Text text="{UserName}" />
+                </t:template>
+              </t:Column>
+              <t:Column sortProperty="LastName">
+                <Label text="labelLastName" />
+                <t:template>
+                  <Text text="{LastName}" />
+                </t:template>
+              </t:Column>
+              <t:Column sortProperty="FirstName">
+                <Label text="labelFirstName" />
+                <t:template>
+                  <Text text="{FirstName}" />
+                </t:template>
+              </t:Column>
+            </t:columns>
+          </t:Table>
+        </content>
+        <footer>
+            <OverflowToolbar>
+              <ToolbarSpacer />
+              <Button text="btnAdd" icon="sap-icon://add" type="Emphasized" press="onAdd"/>
+              <Button text="btnEdit" icon="sap-icon://edit" press="onEdit" />
+              <Button text="btnDelete" icon="sap-icon://delete" press="onDelete" />
+              <Button text="btnRefresh" icon="sap-icon://refresh" press="onRefresh"/>
+            </OverflowToolbar>
+          </footer>
+      </Page>
+    </pages>
+  </App>
+</mvc:View>
