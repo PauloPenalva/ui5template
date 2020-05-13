@@ -5,7 +5,7 @@
     <f:SimpleForm id="form" layout="ResponsiveGridLayout" singleContainerFullSize="true"
       title="People">
       <f:content>
-          <core:Title text="People Data"/>
+          <core:Title text="People Data" />
           <Label text="UserName" />
           <Input value="{UserName}" required="true" editable="{view>/editable}"/>
           <Label text="LastName" />

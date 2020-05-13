@@ -16,6 +16,7 @@
             selectionBehavior="Row"
             selectionMode="Single"
             visibleRowCountMode="Auto"
+            busyIndicatorSize="Medium"
             rows="{/People}">
             <t:extension>
               <OverflowToolbar>
@@ -47,14 +48,14 @@
           </t:Table>
         </content>
         <footer>
-            <OverflowToolbar>
-              <ToolbarSpacer />
-              <Button text="btnAdd" icon="sap-icon://add" type="Emphasized" press="onAdd"/>
-              <Button text="btnEdit" icon="sap-icon://edit" press="onEdit" />
-              <Button text="btnDelete" icon="sap-icon://delete" press="onDelete" />
-              <Button text="btnRefresh" icon="sap-icon://refresh" press="onRefresh"/>
-            </OverflowToolbar>
-          </footer>
+          <OverflowToolbar>
+            <ToolbarSpacer />
+            <Button text="btnAdd" icon="sap-icon://add" type="Emphasized" press="onAdd"/>
+            <Button text="btnEdit" icon="sap-icon://edit" press="onEdit" />
+            <Button text="btnDelete" icon="sap-icon://delete" press="onDelete" />
+            <Button text="btnRefresh" icon="sap-icon://refresh" press="onRefresh"/>
+          </OverflowToolbar>
+        </footer>
       </Page>
     </pages>
   </App>
