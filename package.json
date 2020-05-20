@@ -2,7 +2,7 @@
   "name": "ui5Template",
   "version": "0.0.1",
   "engines": {
-    "node": "10.X"
+    "node": "12.X"
   },
   "scripts": {
     "start": "ui5 serve -o index.html",
@@ -12,7 +12,7 @@
     "clearCoverage": "shx rm -rf coverage",
     "karma": "run-s clearCoverage karma-ci",
     "lint": "eslint .",
-    "build": "ui5 build --clean-dest --dest dist "
+    "build": "ui5 build --clean-dest --dest dist --include-task=generateCachebusterInfo"
   },
   "dependencies": {
     "shx": "^0.3.2"
