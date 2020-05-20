@@ -1,8 +1,10 @@
+//@ts-nocheck
 sap.ui.define([
   "sap/ui/core/UIComponent",
   "sap/ui/Device",
-  "br/com/idxtec/ui5Template/model/models"
-], function(UIComponent, Device, models) {
+  "br/com/idxtec/ui5Template/model/models",
+  "./controller/ErrorHandler"
+], function(UIComponent, Device, models, ErrorHandler) {
   "use strict";
 
   return UIComponent.extend("br.com.idxtec.ui5Template.Component", {
@@ -20,6 +22,9 @@ sap.ui.define([
       // call the base component's init function
       UIComponent.prototype.init.apply(this, arguments);
 
+      // initialize the error handler with the component
+      this._oErrorHandler = new ErrorHandler(this);
+
       // enable routing
       this.getRouter().initialize();
 
@@ -29,6 +34,12 @@ sap.ui.define([
 
       // set the device model
       this.setModel(models.createDeviceModel(), "device");
+    },
+
+    destroy: function () {
+      this._oErrorHandler.destroy();
+      // call the base component's destroy function
+      UIComponent.prototype.destroy.apply(this, arguments);
     },
 
     getContentDensityClass: function () {
