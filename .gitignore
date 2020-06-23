@@ -4,7 +4,6 @@ node_modules/
 *.mtar
 dist/
 package-lock.json
-yarn.lock
 mta_archives/
 deployer/resources/
 Makefile*

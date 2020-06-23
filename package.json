@@ -1,18 +1,13 @@
 {
-  "name": "ui5Template",
+  "name": "ContratoCompra",
   "version": "0.0.1",
   "engines": {
     "node": "12.X"
   },
   "scripts": {
-    "start": "ui5 serve -o index.html",
-    "serve": "ui5 serve",
-    "test": "run-s lint karma",
-    "karma-ci": "karma start karma-ci.conf.js",
-    "clearCoverage": "shx rm -rf coverage",
-    "karma": "run-s clearCoverage karma-ci",
-    "lint": "eslint .",
-    "build": "ui5 build --clean-dest --dest dist --include-task=generateCachebusterInfo"
+    "start": "ui5 serve -o index.html?siagro-filial=0101#/",
+    "start-dist": "ui5 serve -o index.html --config ui5-dist.yaml",
+    "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo"
   },
   "dependencies": {
     "shx": "^0.3.2"
@@ -27,13 +22,12 @@
     "karma-ui5": "^1.1.0",
     "npm-run-all": "^4.1.5",
     "ui5-middleware-livereload": "^0.1.7",
-    "ui5-middleware-simpleproxy": "^0.2.0"
+    "ui5-middleware-proxy-basicauth": "^0.0.6"
   },
   "ui5": {
     "dependencies": [
       "ui5-middleware-livereload",
-      "ui5-middleware-simpleproxy",
-      "@sapui5/ts-types"
+      "ui5-middleware-proxy-basicauth"
     ]
   }
 }

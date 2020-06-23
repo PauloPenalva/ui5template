@@ -1,6 +1,6 @@
 {
   "generator-easy-ui5": {
-    "projectname": "ui5Template",
+    "projectname": "ContratoCompra",
     "namespace": "br.com.idxtec",
     "platform": "Static webserver",
     "viewtype": "XML",

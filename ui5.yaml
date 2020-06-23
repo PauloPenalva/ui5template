@@ -1,6 +1,6 @@
 specVersion: "1.0"
 metadata:
-  name: ui5Template
+  name: ui5template
 type: application
 server:
   customMiddleware:
@@ -9,9 +9,8 @@ server:
       configuration:
         port: 35729
         path: webapp
-    - name: ui5-middleware-simpleproxy
+    - name: ui5-middleware-proxy-basicauth
       afterMiddleware: compression
       mountPath: /siagro/odata/service.svc
       configuration:
         baseUri: "https://services.odata.org/TripPinRESTierService/(S(iotc0dqwznocl0bpgjcczz0b))/"
-        strictSSL: true
