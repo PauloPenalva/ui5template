@@ -1,6 +1,4 @@
-# ContratoCompra
-Insert the purpose of this project and some intersting infos here
-
-
-## Credits
-This project has been generated with 💙 and [easy-ui5](https://github.com/SAP)
+# ui5template
+OpenUI5 App Template
+Clone this and run npm install ( or yarn install )
+To run this app, type npm start or yarn start 
