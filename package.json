@@ -9,7 +9,6 @@
   },
   "scripts": {
     "start": "ui5 serve --open test/flpSandbox.html?siagro-filial=0101/#masterDetail-display --",
-    "start-dist": "ui5 serve -o index.html --config ui5-dist.yaml",
     "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo"
   },
   "dependencies": {
@@ -17,7 +16,7 @@
   },
   "devDependencies": {
     "@sapui5/ts-types": "^1.77.2",
-    "@ui5/cli": "^1.14.0",
+    "@ui5/cli": "^2.2.6",
     "eslint": "^6.8.0",
     "karma": "^4.4.1",
     "karma-chrome-launcher": "^3.1.0",
