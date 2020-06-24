@@ -1,11 +1,14 @@
 {
   "name": "ui5template",
   "version": "0.0.1",
+  "private": true,
+  "sapux": true,
+  "description": "UI5 Template",
   "engines": {
     "node": ">=10.X"
   },
   "scripts": {
-    "start": "ui5 serve -o index.html?siagro-filial=0101#/",
+    "start": "ui5 serve --open test/flpSandbox.html?siagro-filial=0101/#masterDetail-display --",
     "start-dist": "ui5 serve -o index.html --config ui5-dist.yaml",
     "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo"
   },
